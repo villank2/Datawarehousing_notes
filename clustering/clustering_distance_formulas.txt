@@ -1,0 +1,5 @@
+euclidean distance
+d(i,j) = ((xᵢ₁ - xⱼ₁)² + (xᵢ₂ - xⱼ₂)² + ... + (xᵢₙ - xⱼₙ)²)¹/²
+
+manhattan distance 
+d(i,j) = |xᵢ₁ - xⱼ₁| + |xᵢ₂ - xⱼ₂| + .. + |xᵢₙ - xⱼₙ|
