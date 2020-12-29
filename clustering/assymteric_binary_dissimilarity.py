@@ -10,8 +10,7 @@ def binary_dissimilarity(i,j):
     q is the number of attributes where attrᵢ = 1 and attrⱼ = 1
     and p = sum(r,s,q)'''
 
-    ones = "py" #positive , yes
-    zeros = "n" #negative, no
+    assert(len(i) == len(j))
     cols = ["id"]
     for index_ in range(1,len(i[1:])+1):
         cols.append("attr{}".format(index_))
@@ -36,12 +35,28 @@ def binary_dissimilarity(i,j):
             s+=1
 
     p = q + r + s
-    diss = (r+s)/p
-    print(diss)   
+    
+    if p != 0:
+        diss = (r+s)/p
+        print(df)
+        print(df["id"].values)
+        print(diss)   
     
 if __name__ == "__main__":
-    i = ["p1","y","n","n","p"]
-    j = ["p2","y","n","y","n"]
-
-    binary_dissimilarity(i,j)
+    pA = ["patient a"] + list("yyyypn")
+    pB = ["patient b"] + list("ynnnpp")
+    pC = ["patient c"] + list("yyynpn")
+    pD = ["patient d"] + list("ynnnnn")
+    pE = ["patient e"] + list("nyyypn")
     
+    li = [pA,pB,pC,pD,pE]
+
+    i = 0
+    while i < len(li)-1:
+        j = i + 1
+        while j < len(li):
+            i_obj = li[i]
+            j_obj = li[j]
+            binary_dissimilarity(i_obj,j_obj)
+            j += 1
+        i += 1
