@@ -3,3 +3,19 @@ d(i,j) = ((xᵢ₁ - xⱼ₁)² + (xᵢ₂ - xⱼ₂)² + ... + (xᵢₙ - xⱼ�
 
 manhattan distance 
 d(i,j) = |xᵢ₁ - xⱼ₁| + |xᵢ₂ - xⱼ₂| + .. + |xᵢₙ - xⱼₙ|
+
+dissimilarity between two binary variables
+d(i,j) = (x,y)
+where x & y are either 1 or 0
+q = (1,1)
+r = (1,0)
+s = (0,1)
+t = (0,0)
+
+p = q + r + s + t
+
+symmetric binary variables
+d(i,j) = (r + s)/p
+
+asymmetric binary varibales
+d(i,j) = (r+s)/(p-t)
