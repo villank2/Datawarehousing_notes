@@ -43,13 +43,14 @@ def binary_dissimilarity(i,j):
         print(diss)   
     
 if __name__ == "__main__":
-    pA = ["patient a"] + list("yyyypn")
-    pB = ["patient b"] + list("ynnnpp")
-    pC = ["patient c"] + list("yyynpn")
-    pD = ["patient d"] + list("ynnnnn")
-    pE = ["patient e"] + list("nyyypn")
-    
-    li = [pA,pB,pC,pD,pE]
+    pA = ["patient 1"] + list("ynynny")
+    pB = ["patient 2"] + list("yyynyy")
+    pC = ["patient 3"] + list("nnynyy")
+    pD = ["patient 4"] + list("yyynyn")
+    pE = ["patient 5"] + list("nnynyn")
+    pf = ["patient 6"] + list("yyyyyn")
+    pg = ["patient 7"] + list("yynyyy")
+    li = [pA,pB,pC,pD,pE,pf,pg]
 
     i = 0
     while i < len(li)-1:

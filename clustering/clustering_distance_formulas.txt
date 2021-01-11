@@ -14,8 +14,17 @@ t = (0,0)
 
 p = q + r + s + t
 
+
+DISSIMILARITY
+
 symmetric binary variables
 d(i,j) = (r + s)/p
 
 asymmetric binary varibales
 d(i,j) = (r+s)/(p-t)
+
+dissimilarity by categorical values
+d(i,j) = p-m/p
+where 
+p is the total number of variables,
+m is the tootal number of matches (1,1),(0,0)

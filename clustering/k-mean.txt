@@ -1,0 +1,6 @@
+1.choose k value
+2.choose initial k objcets(centroids)
+3.assign each object a cluster to belong to
+4.recalculate the centroids of clusters
+5.repeat 3,4 until centroids no longer move
+
